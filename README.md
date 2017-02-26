@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 [hog-car-2]: ./output_images/hog-car-2.png
 [hog-noncar-1]: ./output_images/hog-noncar-1.png
 [hog-noncar-2]: ./output_images/hog-noncar-2.png
-[image3]: ./output_images/sliding_windows.jpg
+[image3]: ./output_images/sliding_windows.png
 [image4]: ./output_images/sliding_window.png
 [image5]: ./output_images/bboxes_and_heat.png
 [image6]: ./output_images/labels_map.png
@@ -48,11 +48,13 @@ I then explored different color spaces and different `skimage.hog()` parameters 
 
 Here is an example using the `YCrCb` color space and HOG parameters of `orientations=8`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2)`:
 
-*Cars*
+**Cars**
+
 ![alt text][hog-car-1]
 ![alt text][hog-car-2]
 
-*Non-Cars*
+**Non-Cars**
+
 ![alt text][hog-noncar-1]
 ![alt text][hog-noncar-2]
 
@@ -97,11 +99,11 @@ I recorded the positions of positive detections in each frame of the video.  Fro
 
 Here's an example result showing the heatmap from a series of frames of video, the result of `scipy.ndimage.measurements.label()` and the bounding boxes then overlaid on the last frame of video:
 
-### Here are six frames and their corresponding heatmaps:
+### Here is an example and the corresponding heatmap:
 
 ![alt text][image5]
 
-### Here is the output of `scipy.ndimage.measurements.label()` on the integrated heatmap from all six frames:
+### Here is the output of `scipy.ndimage.measurements.label()` on the heatmap:
 ![alt text][image6]
 
 ### Here the resulting bounding boxes are drawn onto the last frame in the series:
